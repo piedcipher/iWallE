@@ -1,0 +1,1 @@
+php ~/iWallE/app.php "${1}" "$(gsettings list-schemas | grep 'desktop.background')"
