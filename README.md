@@ -1,5 +1,5 @@
 # iWallE
-CLI app with PHP that changes wallpaper using Imgur's API from a subreddit.
+CLI app with Bash & PHP that changes wallpaper using Imgur's API from a subreddit.
 
 
 ## Dependencies
