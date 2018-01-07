@@ -8,7 +8,7 @@ CLI app with Bash & PHP that changes wallpaper using Imgur's API from a subreddi
 
 
 ## Setup
-* Download & Extract repo in ```Home directory``` i.e.```/home/<your_username>```
+* Download & Extract repo in ```Home directory``` i.e.```/home/<your_username>``` *OR* ```git clone https://github.com/piedcipher/iWallE.git ~/iWallE```
 * Register a new [Imgur application](https://api.imgur.com/oauth2/addclient) to get API credentials.
 * Put ```client id``` in ```app.php``` file.
 
