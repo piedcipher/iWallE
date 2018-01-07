@@ -30,14 +30,24 @@ if ($err) {
 } else {
 	$response = json_decode($response);
 	$count = count($response->data);
-	$random = rand(0, $count);
+	$random = rand(0, $count); // To pick random image from json
 
-	if($response->data[$random]->type == "image/png")
+	// To determine whether it is a single image or an album
+	if(isset($response->data[$random]->images[0]->link)){
+		$stdObject = $response->data[$random]->images[0];
+	
+	else if(isset($response->data[$random]->link))
+		$stdObject = $response->data[$random];
+	
+	$link = $stdObject->link;
+	
+	// To determine extension of image
+	if($stdObject->type == "image/png")
 		$ext = "png";
 	else
 		$ext = "jpg";
 
-	$link = $response->data[$random]->link;
+	// To save wallpaper
 	$wallpaper = file_get_contents($link);
 	file_put_contents("$homePath/iWallE_Wall.$ext", $wallpaper);
 
