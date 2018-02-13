@@ -33,9 +33,8 @@ if ($err) {
 	$random = rand(0, $count); // To pick random image from json
 
 	// To determine whether it is a single image or an album
-	if(isset($response->data[$random]->images[0]->link)){
+	if(isset($response->data[$random]->images[0]->link))
 		$stdObject = $response->data[$random]->images[0];
-	
 	else if(isset($response->data[$random]->link))
 		$stdObject = $response->data[$random];
 	
