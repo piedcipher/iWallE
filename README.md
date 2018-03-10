@@ -1,4 +1,6 @@
 # iWallE
+![](https://vignette.wikia.nocookie.net/pixar/images/d/d4/Wall%E2%80%A2e.png/revision/latest/scale-to-width-down/185?cb=20110429103101)
+
 CLI app with Bash & PHP that changes wallpaper using Imgur's API from a subreddit.
 
 
